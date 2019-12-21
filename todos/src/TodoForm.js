@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function TodoFrom(props) {
 	const [Inputvalue, SetInput] = useState("");
@@ -13,13 +14,18 @@ function TodoFrom(props) {
 
 	return (
 		<div>
-			<input
-				type="text"
-				value={Inputvalue}
-				placeholder="add some new task"
-				onChange={handelChange}
-			/>
-			<button onClick={handelSubmit}>Add Todo</button>
+			<section className="form">
+				<input
+					id="todoInput"
+					type="text"
+					value={Inputvalue}
+					placeholder="Add some new task"
+					onChange={handelChange}
+				/>
+				<button className="btn" onClick={handelSubmit}>
+					Add Todo
+				</button>
+			</section>
 		</div>
 	);
 }

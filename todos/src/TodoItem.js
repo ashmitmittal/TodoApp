@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 function TodoItem(props) {
 	const handelDelete = () => {
@@ -11,7 +12,7 @@ function TodoItem(props) {
 
 	return (
 		<div>
-			<li>
+			<li className="task">
 				<span
 					style={{
 						textDecoration: props.completed ? "line-through" : "none"
@@ -20,7 +21,7 @@ function TodoItem(props) {
 				>
 					{props.name}
 				</span>
-				<span onClick={handelDelete}> X </span>
+				<em onClick={handelDelete}> X </em>
 			</li>
 		</div>
 	);

@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background: #f4b0c7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 64px;
+	font-weight: 300;
+	margin: 80px 0 25px;
+	color: #413c69;
+}
+header h1 span {
+	font-weight: 700;
+}
+header h2 {
+	color: #4a47a3;
+	font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+	width: 800px;
+	margin: 50px auto 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#todoInput {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #34495e;
+	outline: none;
+	font: 300 20px "Ubuntu", sans-serif;
+	padding: 20px;
+	color: #34495e;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+	width: 800px;
+	margin: 0 auto;
+}
+.task {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	padding: 0 20px;
+	color: #4a47a3;
+	transition: all 0.3s ease;
+}
+.task:hover {
+	background: rgba(0, 0, 0, 0.02);
+	cursor: pointer;
+}
+.task:hover em {
+	opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done {
+	text-decoration: line-through;
+	color: #bdc3c7;
+}
+li em {
+	float: right;
+	color: #413c69;
+	transition: all 0.3s;
+	opacity: 0;
+}
+li em:hover {
+	color: #413c69;
+}
+
+.btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	background-color: #ad62aa;
+	font-size: 16px;
+	font-weight: 300px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 10px;
+	margin: 0 auto;
+	border-radius: 20px;
 }

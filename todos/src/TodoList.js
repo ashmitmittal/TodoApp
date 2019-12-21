@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
+import "./App.css";
 
 const APIURL = "/api/todos/";
 
@@ -115,9 +116,12 @@ function TodoList(props) {
 
 	return (
 		<div>
-			<h1>TodoList</h1>
+			<header>
+				<h1>TodoList</h1>
+				<h2>A simple todo app built with React and node</h2>
+			</header>
 			<TodoForm addTodo={addTodo} />
-			<ul>
+			<ul className="list">
 				{todos.map((t) => (
 					<TodoItem
 						key={t._id}
