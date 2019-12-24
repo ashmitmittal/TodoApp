@@ -23,7 +23,7 @@ header h2 {
 }
 
 .form {
-	width: 800px;
+	width: 80%;
 	margin: 50px auto 20px;
 }
 
@@ -87,5 +87,6 @@ li em:hover {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 10px 10px;
+	margin: 0 auto;
 	border-radius: 20px;
 }
