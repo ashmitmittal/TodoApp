@@ -40,7 +40,7 @@ header h2 {
 }
 
 .list {
-	width: 800px;
+	width: 80%;
 	margin: 0 auto;
 }
 .task {
@@ -87,6 +87,5 @@ li em:hover {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 10px 10px;
-	margin: 0 auto;
 	border-radius: 20px;
 }
